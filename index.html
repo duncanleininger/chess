@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="textcontainer">
+        <h1 id="turntext">WHITE'S TURN</h1>
+        <h1 id="checktext">Possible Moves: 20</h1>
+    </div>
+    <div class="bg"> 
+        <div class="chessboard" id="chessboard">
+                        <div id="1A" class="field black row1 colA" ></div>
+                        <div id="2A" class="field white row2 colA"></div>
+                        <div id="3A" class="field black row3 colA"></div>
+                        <div id="4A" class="field white row4 colA"></div>
+                        <div id="5A" class="field black row5 colA"></div>
+                        <div id="6A" class="field white row6 colA"></div>
+                        <div id="7A" class="field black row7 colA"></div>
+                        <div id="8A" class="field white row8 colA"></div>
+                        
+                        <div id="1B" class="field white row1 colB"></div>
+                        <div id="2B" class="field black row2 colB"></div>
+                        <div id="3B" class="field white row3 colB"></div>
+                        <div id="4B" class="field black row4 colB"></div>
+                        <div id="5B" class="field white row5 colB"></div>
+                        <div id="6B" class="field black row6 colB"></div>
+                        <div id="7B" class="field white row7 colB"></div>
+                        <div id="8B" class="field black row8 colB"></div>
+
+                        <div id="1C" class="field black row1 colC" ></div>
+                        <div id="2C" class="field white row2 colC"></div>
+                        <div id="3C" class="field black row3 colC"></div>
+                        <div id="4C" class="field white row4 colC"></div>
+                        <div id="5C" class="field black row5 colC"></div>
+                        <div id="6C" class="field white row6 colC"></div>
+                        <div id="7C" class="field black row7 colC"></div>
+                        <div id="8C" class="field white row8 colC"></div>
+
+                        <div id="1D" class="field white row1 colD"></div>
+                        <div id="2D" class="field black row2 colD"></div>
+                        <div id="3D" class="field white row3 colD"></div>
+                        <div id="4D" class="field black row4 colD"></div>
+                        <div id="5D" class="field white row5 colD"></div>
+                        <div id="6D" class="field black row6 colD"></div>
+                        <div id="7D" class="field white row7 colD"></div>
+                        <div id="8D" class="field black row8 colD"></div>
+                    
+                        <div id="1E" class="field black row1 colE" ></div>
+                        <div id="2E" class="field white row2 colE"></div>
+                        <div id="3E" class="field black row3 colE"></div>
+                        <div id="4E" class="field white row4 colE"></div>
+                        <div id="5E" class="field black row5 colE"></div>
+                        <div id="6E" class="field white row6 colE"></div>
+                        <div id="7E" class="field black row7 colE"></div>
+                        <div id="8E" class="field white row8 colE"></div>
+
+                        <div id="1F" class="field white row1 colF"></div>
+                        <div id="2F" class="field black row2 colF"></div>
+                        <div id="3F" class="field white row3 colF"></div>
+                        <div id="4F" class="field black row4 colF"></div>
+                        <div id="5F" class="field white row5 colF"></div>
+                        <div id="6F" class="field black row6 colF"></div>
+                        <div id="7F" class="field white row7 colF"></div>
+                        <div id="8F" class="field black row8 colF"></div>
+
+                        <div id="1G" class="field black row1 colG" ></div>
+                        <div id="2G" class="field white row2 colG"></div>
+                        <div id="3G" class="field black row3 colG"></div>
+                        <div id="4G" class="field white row4 colG"></div>
+                        <div id="5G" class="field black row5 colG"></div>
+                        <div id="6G" class="field white row6 colG"></div>
+                        <div id="7G" class="field black row7 colG"></div>
+                        <div id="8G" class="field white row8 colG"></div>
+
+                        <div id="1H" class="field white row1 colH"></div>
+                        <div id="2H" class="field black row2 colH"></div>
+                        <div id="3H" class="field white row3 colH"></div>
+                        <div id="4H" class="field black row4 colH"></div>
+                        <div id="5H" class="field white row5 colH"></div>
+                        <div id="6H" class="field black row6 colH"></div>
+                        <div id="7H" class="field white row7 colH"></div>
+                        <div id="8H" class="field black row8 colH"></div>
+
+                        <img id="wpA" onclick="showMoves(this)" class="piece row2 colA" src="imgs/wp.png">
+                        <img id="wpB" onclick="showMoves(this)" class="piece row2 colB" src="imgs/wp.png">
+                        <img id="wpC" onclick="showMoves(this)" class="piece row2 colC" src="imgs/wp.png">
+                        <img id="wpD" onclick="showMoves(this)" class="piece row2 colD" src="imgs/wp.png">
+                        <img id="wpE" onclick="showMoves(this)" class="piece row2 colE" src="imgs/wp.png">
+                        <img id="wpF" onclick="showMoves(this)" class="piece row2 colF" src="imgs/wp.png">
+                        <img id="wpG" onclick="showMoves(this)" class="piece row2 colG" src="imgs/wp.png">
+                        <img id="wpH" onclick="showMoves(this)" class="piece row2 colH" src="imgs/wp.png">
+                        
+                        <img id="bpA" onclick="showMoves(this)" class="piece row7 colA" src="imgs/bp.png">
+                        <img id="bpB" onclick="showMoves(this)" class="piece row7 colB" src="imgs/bp.png">
+                        <img id="bpC" onclick="showMoves(this)" class="piece row7 colC" src="imgs/bp.png">
+                        <img id="bpD" onclick="showMoves(this)" class="piece row7 colD" src="imgs/bp.png">
+                        <img id="bpE" onclick="showMoves(this)" class="piece row7 colE" src="imgs/bp.png">
+                        <img id="bpF" onclick="showMoves(this)" class="piece row7 colF" src="imgs/bp.png">
+                        <img id="bpG" onclick="showMoves(this)" class="piece row7 colG" src="imgs/bp.png">
+                        <img id="bpH" onclick="showMoves(this)" class="piece row7 colH" src="imgs/bp.png">
+                        
+                        <img id="wrA" onclick="showMoves(this)" class="piece row1 colA" src="imgs/wr.png">
+                        <img id="wrH" onclick="showMoves(this)" class="piece row1 colH" src="imgs/wr.png">
+
+                        <img id="brA" onclick="showMoves(this)" class="piece row8 colA" src="imgs/br.png">
+                        <img id="brH" onclick="showMoves(this)" class="piece row8 colH" src="imgs/br.png">
+
+                        <img id="wnB" onclick="showMoves(this)" class="piece row1 colB" src="imgs/wn.png">
+                        <img id="wnG" onclick="showMoves(this)" class="piece row1 colG" src="imgs/wn.png">
+
+                        <img id="bnB" onclick="showMoves(this)" class="piece row8 colB" src="imgs/bn.png">
+                        <img id="bnG" onclick="showMoves(this)" class="piece row8 colG" src="imgs/bn.png">
+                        
+                        <img id="wbC" onclick="showMoves(this)" class="piece row1 colC" src="imgs/wb.png">
+                        <img id="wbF" onclick="showMoves(this)" class="piece row1 colF" src="imgs/wb.png">
+
+                        <img id="bbC" onclick="showMoves(this)" class="piece row8 colC" src="imgs/bb.png">
+                        <img id="bbF" onclick="showMoves(this)" class="piece row8 colF" src="imgs/bb.png">
+                        
+                        <img id="wq" onclick="showMoves(this)" class="piece row1 colD" src="imgs/wq.png">
+                        <img id="bq" onclick="showMoves(this)" class="piece row8 colD" src="imgs/bq.png">
+                        
+                        <img id="wk" onclick="showMoves(this)" class="piece row1 colE" src="imgs/wk.png">
+                        <img id="bk" onclick="showMoves(this)" class="piece row8 colE" src="imgs/bk.png">
+        </div>
+        <div id="whitePromoteContainer" class="hide pr whitePr">
+            <img id="qW" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/wq.png">
+            <img id="rW" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/wr.png">
+            <img id="nW" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/wn.png">
+            <img id="bW" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/wb.png">
+        </div>
+        <div id="blackPromoteContainer" class="hide pr blackPr">
+            <img id="qB" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/bq.png">
+            <img id="rB" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/br.png">
+            <img id="nB" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/bn.png">
+            <img id="bB" onclick="choosePiece(this.id[0])" class="promBtn" src="imgs/bb.png">
+        </div>
+    </div>
+    <audio id="mvsound" src="sounds/move-self.mp3"></audio>
+    <audio id="tksound" src="sounds/capture.mp3"></audio>
+    <audio id="cssound" src="sounds/castle.mp3"></audio>
+    <audio id="cksound" src="sounds/check.mp3"></audio>
+    <audio id="prsound" src="sounds/promote.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
